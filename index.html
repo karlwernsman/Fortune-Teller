@@ -13,25 +13,25 @@
         />
         <link rel="stylesheet" href="/styles/reset.css" />
         <link rel="stylesheet" href="/styles/global.css" />
-        <title>8 Ball Fortune Teller</title>
+        <title>Magic Ball Fortune Teller</title>
     </head>
 
     <body>
         <header>
-            <img src="/assets/html_css_js.png" />
-            <h1>8 Ball Fortune Teller</h1>
+            <img src="./assets/stars.png" id="star" />
+            <h1>Magic Ball Fortune Teller</h1>
         </header>
 
         <main>
             <div id="inputs-parent">
-                What question would you like to ask the magic 8 ball?
+                <h2>What question would you like to ask the magic ball?</h2>
                 <input type="text" name="user-question" id="user-question" />
                 <button id="ask-button">Ask</button>
-                <img src="./assets/8 ball.jpeg" alt="8 ball" />
+                <img src="./assets/magicball.png" alt="magic ball" id="magic-ball" />
             </div>
-            <div id="fortune-parent">
-                <h2>The 8 ball has made a decision...</h2>
-                <p></p>
+            <div id="fortune-parent" class="hide">
+                <h2>The magic ball has made a decision...</h2>
+                <p id="fortune-response"></p>
                 <button id="play-again">Play again</button>
             </div>
         </main>
