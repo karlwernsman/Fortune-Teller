@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap"
+        />
+        <link rel="stylesheet" href="/styles/reset.css" />
+        <link rel="stylesheet" href="/styles/global.css" />
+        <title>Magic Ball Fortune Teller</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
-</head>
+    <body>
+        <header>
+            <img src="./assets/stars.png" id="star" />
+            <h1>Magic Ball Fortune Teller</h1>
+            <img src="./assets/stars.png" id="star" />
+        </header>
 
-<body>
-    <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
-    </header>
+        <main>
+            <div id="inputs-parent">
+                <h2>What question would you like to ask the magic ball?</h2>
+                <input type="text" name="user-question" id="user-question" />
+                <button id="ask-button">Ask</button>
+                <img src="./assets/magicball.png" alt="magic ball" id="magic-ball" />
+            </div>
+            <div id="fortune-parent" class="hide">
+                <h2>The magic ball has made a decision...</h2>
+                <p id="fortune-response"></p>
+                <button id="play-again">Play again</button>
+            </div>
+        </main>
 
-    <main>
+        <footer>2022 Software Developer</footer>
 
-    </main>
-
-    <footer>&copy;2022 Software Developer</footer>
-
-    <script type="module" src="app.js"></script>
-</body>
-
+        <script type="module" src="app.js"></script>
+    </body>
 </html>
